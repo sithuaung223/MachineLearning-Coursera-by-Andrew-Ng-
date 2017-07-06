@@ -37,6 +37,9 @@ X = [ones(m, 1) X];
 
 
 % =========================================================================
-
+h = sigmoid(X * all_theta' );
+%th = 0.5 .+ zeros(m, num_labels);
+%preds = h - th;
+[probs, p] = max(h, [], 2);
 
 end
